@@ -2,7 +2,7 @@ title: Course-project
 email: viki.radeva91@gmail.com
 description: Course-project
 destination: docs
-baseurl: "/" 
+baseurl: "/course-project" 
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  viki.radeva91
