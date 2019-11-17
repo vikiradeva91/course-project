@@ -50,7 +50,6 @@ header .social a {
 }
 
 @media all and (max-width: 939px) {
-	header {
-		display: block;
-	}
+	header, nav ul {display: block;}
+	header nav { text-align: center;}
 }
