@@ -8,21 +8,28 @@
     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/content.css">
     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/style.css">
     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/header.css">
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/fluid.css">
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/hb-menu.css">
 
 </head>
 <body>
 
     <div class="site">
         <header class="site-header">
-            <a href="/"><img src="{{site.baseurl}}/img/logo-grey-transparent.png" alt=""></a>
-
+            <a class="logo" href="/"><img src="{{site.baseurl}}/img/logo-grey-transparent.png" alt=""></a>
+            <div class="E"><hr><hr><hr><hr></div>
                 <nav>
                     <ul>
-                    {% for page in site.pages %}
+                    {% assign pages = site.pages | sort: "order" %}
+                    {% for page in pages %}
                         {% if page.title %}
-                            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                            <li><a class="red" href="{{site.baseurl}}/{{ page.url }}">{{ page.title }}</a></li>
                         {% endif %}
                     {% endfor %}
+                        <div class="social">
+                            <a class="fb" href="#"></a>
+                            <a class="in" href="#"></a>
+                        </div>
                     </ul>
                 </nav>
 

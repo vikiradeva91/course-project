@@ -2,9 +2,55 @@ header, nav ul {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin:  10px;
 }
 
+header nav a.red {
+	display:inline-block;
+	text-decoration:none;
+	color:rgba(0,0,0,.5);
+	font-size:16px;
+	padding: 5px 15px;
+	margin-right: 5px;
+}
 
-ul li { margin-left: 10px; }
+header nav a.red:hover { 
+	color: #db0546;
+	border-bottom: 1px solid #db0546;
+	margin-bottom: -1px;
+}
 
+header .logo img {
+	width: 100px;
+	margin: 10px auto;
+}
+
+header nav { margin: 10px 0;}
+
+header nav .social a {
+	border: 1px solid #db0546;
+	border-radius: 20px;
+    background-size: 12px;
+    display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 3px;
+}
+
+header nav a.fb { background-image: url(../svg/facebook.svg);}
+header nav a.in { background-image: url(../svg/linkedin.svg);}
+
+header .social a {
+    background-position: center;
+	background-repeat: no-repeat;
+}
+
+@media all and (max-width: 1280px){
+ 	header a.logo { margin-left: 10px;}
+	header nav { margin-right: 10px;}
+}
+
+@media all and (max-width: 939px) {
+	header {
+		display: block;
+	}
+}
