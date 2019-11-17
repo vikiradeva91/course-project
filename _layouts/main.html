@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ site.title }}</title>
-    <a href="{{site.baseurl}}/css/style.css"></a>
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}css/content.css">
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}css/header.css">
+
 </head>
 <body>
 
     <div class="site">
         <header class="site-header">
-            <a href="/"><img src="img/logo-grey-transparent.png" alt=""></a>
+            <a href="/"><img src="./img/logo-grey-transparent.png" alt=""></a>
 
                 <nav>
                     <ul>
@@ -22,14 +25,18 @@
                     {% endfor %}
                     </ul>
                 </nav>
-            
 
-            
         </header>
+
+         <main>
+            {{ content }}
+        </main>
+
+        <footer>
+            
+        </footer>
     </div>
 
-
-    {{ content }}
-
+   
 </body>
 </html>
