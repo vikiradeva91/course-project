@@ -4,6 +4,17 @@ header, nav ul {
 	align-items: center;
 }
 
+header nav ul li {
+	display: block;
+	transform: translate( 0,-5em);
+	transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+}
+
+.loaded nav ul li {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
 header nav a.red {
 	display:inline-block;
 	text-decoration:none;
@@ -11,6 +22,7 @@ header nav a.red {
 	font-size:16px;
 	padding: 5px 15px;
 	margin-right: 5px;
+	transition: color 0.3s ease-in;
 }
 
 header nav a.red:hover { 
@@ -43,6 +55,8 @@ header .social a {
     background-position: center;
 	background-repeat: no-repeat;
 }
+
+
 
 @media all and (max-width: 1280px){
  	header a.logo { margin-left: 10px;}
