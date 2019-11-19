@@ -21,7 +21,7 @@ footer*/ {
 
 .c2, .c3, .c32, .c4, .c43, .c6, .w35, .w15 {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     box-sizing: border-box;
 }
 
