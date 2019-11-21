@@ -58,3 +58,7 @@ section {
 .r {
     text-align: right;
 }
+
+h1,h2,h3,h4 {
+    font-weight: 300;
+}
