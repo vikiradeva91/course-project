@@ -44,7 +44,9 @@ a {
 } /* clearfix */
 
 
-ul { list-style: none; }
+ul { 
+    list-style: none; 
+}
 
 section {
     margin: 0 auto;

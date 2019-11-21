@@ -37,8 +37,8 @@ header nav a.red:hover {
 
 header .logo img {
 	width: 100px;
-	margin: 10px auto;
 	padding-left: 20px;
+	margin: 10px 0;
 }
 
 header nav { margin: 10px 0;}

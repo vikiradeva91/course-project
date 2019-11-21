@@ -1,3 +1,6 @@
+:root
+--main-a {color:#555 }
+
 .width-center {
     margin: 0 auto;
     max-width: 1280px;
@@ -10,8 +13,7 @@
 }
 
 .color div.skew {
-    background-color: 
-    #FFF;
+    background-color:  #FFF;
     position: absolute;
     left: 0;
     right: 0;
@@ -22,8 +24,8 @@
     -moz-transform: skewY(-4deg);
     -ms-transform: skewY(-4deg);
     transform: skewY(-4deg);
-    height: 140px;
-    bottom: -67px;
+    height: 120px;
+    bottom: -53px;
 }
 
 .line {
@@ -51,8 +53,16 @@
 .text h1 { font-size: 35px;}
 
 .suggestions-title { 
-    position: relative;
     text-align: center;
+    margin-top: 40px ;
+}
+
+.hr-line {
+    width: 100px;
+    height: 3px;
+    background-color:   #db0546;
+    border: none;
+    margin-bottom: 27px;
 }
 
 .fixed {
@@ -100,3 +110,69 @@
 
 .fixed div.bg-gray { border: 3px solid #e7ebec;}
 .fixed div.bg-lightorange { border: 3px solid #faebd7;}
+
+.services-title {
+    text-align: center;
+    position: relative;
+    margin: 30px 0;
+}
+
+.services { 
+    text-align: center;
+    background-color: #EEE;
+    padding: 40px;
+}
+
+.services img {
+    filter: grayscale(100);
+    margin:5px 0 20px 0;
+}
+.services img:hover {
+    filter: grayscale(0);
+}
+
+.services section.flex a {
+    margin: 10px;
+    border-bottom: 2px solid#FFF;
+    background-color:#FFF;
+    box-shadow: 0 2px 8px 0    rgba(0,0,0,0.32);
+    padding: 10px;
+    color: var(--main-a);
+}
+
+.services ul { text-align: left;}
+
+.services ul li {  
+    display: flex;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@media all and (max-width:599px) {
+    .services {
+     padding:4%
+    }
+    .services section.flex a {
+     display:block;
+     width:auto
+    }
+}
+@media all and (min-width:600px) {
+
+    .services section.flex {
+     display:flex;
+     flex-wrap:wrap;
+     justify-content:center
+    }
+    .services section.flex a {
+     width:calc(33.333333333% - 20px);
+     display:inline-block;
+     box-sizing:border-box
+    }
+}
+@media all and (min-width:600px) and (max-width:979px) {
+    .services section.flex a {
+     width:calc(50% - 20px)
+    }
+}
