@@ -9,7 +9,7 @@
     position: relative;
 }
 
-.color div.skew, .blue div.skew1 {
+.color div.skew {
     background-color: 
     #FFF;
     position: absolute;
@@ -32,7 +32,22 @@
     margin: 14px 0;
     width: 40px;
 }
-/* 
-.color .woman {
-    padding: 0 40px;
-} */
+.text h1,
+.text p {
+    opacity: 0;
+    transition: opacity 0.6s ease-in 0.6s, transform 0.6s ease-in 0.6s;
+}
+
+.text h1 {
+    transform: translateX(-50vw);
+}
+
+.text p {
+    transform: translateX(-50vw);
+}
+
+.loaded  .text h1,
+.loaded  .text p {
+    transform: translateX(0);
+    opacity: 1;
+}
