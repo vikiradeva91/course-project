@@ -13,22 +13,6 @@
     clip-path: polygon(100% 0, 100% 90%, 51% 100%, 0 90%, 0 0);
 }
 
-/* .color div.skew {
-    background-color:  #FFF;
-    position: absolute;
-    left: 0;
-    right: 0;
-}
-
-.color div.skew {
-    -webkit-transform: skewY(-4deg);
-    -moz-transform: skewY(-4deg);
-    -ms-transform: skewY(-4deg);
-    transform: skewY(-4deg);
-    height: 120px;
-    bottom: -53px;
-} */
-
 .line {
     display: inline-block;
     border-bottom: 2px solid#fff;
@@ -43,7 +27,11 @@
 
 .text  {transform: translateX(-50vw);}
 
-.woman2 { padding-top: 20px; transform: translateX(50vw);}
+.woman2 { 
+    padding-top: 20px; 
+    transform: translateX(50vw);
+    text-align: center;
+}
 
 .loaded .text,
 .loaded .woman2  {
@@ -124,22 +112,22 @@
     padding: 40px;
 }
 
-.services img {
-    filter: grayscale(100);
-    margin:5px 0 20px 0;
-}
-.services img:hover {
-    filter: grayscale(0);
-}
+.services .icon.ce { background-image: url( ../img/ce-mark-home.png);}
+.services .icon.iso { background-image: url( ../img/iso-home.png);}
+.services .icon.aqap { background-image: url( ../img/aqap-home.png);}
 
-.services section.grid a {
+.services section.grid .icon {
     margin: 10px;
     border-bottom: 2px solid#FFF;
     background-color:#FFF;
     box-shadow: 0 2px 8px 0    rgba(0,0,0,0.32);
-    padding: 15px;
-    color: var(--main-a);
+    padding: 70px 15px 15px;
+    background-position: center 10px;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
 }
+
+.services section.grid .icon:hover {filter: none;}
 
 .services ul { text-align: left;}
 

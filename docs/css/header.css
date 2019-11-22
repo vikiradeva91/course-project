@@ -1,3 +1,8 @@
+:root
+--header-a {color:#555 }
+
+header a.logo { color: var(--header-a);}
+
 header, nav ul {
 	display: flex;
 	justify-content: space-between;
@@ -37,7 +42,7 @@ header nav a.red:hover {
 
 header .logo img {
 	width: 100px;
-	padding-left: 20px;
+	padding:0 7px 0 20px;
 	margin: 10px 0;
 }
 
@@ -61,9 +66,20 @@ header .social a {
 	background-repeat: no-repeat;
 }
 
+@media all and (min-width:961px) {
+	header a.logo { 
+		display: flex;
+		align-items: center;
+	}
+}
+
+@media all and (max-width:960px) {
+	header a.logo p { 
+		display: none
+	}
+}
 
 @media all and (max-width: 1280px){
- 	header a.logo { margin-left: 10px;}
 	header nav { margin-right: 10px;}
 }
 
