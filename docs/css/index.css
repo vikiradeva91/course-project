@@ -1,3 +1,8 @@
+:root {
+    --h4-font-size:25px;
+    --h3-font-size: 30px;
+    --h1-font-size: 40px;
+}
 /* RED HEADER */
 
 .width-center {
@@ -121,12 +126,24 @@
 
 .services section.grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
+@media all and (max-width:700px) {
+    .services section.grid {
+        grid-template-columns: 1fr;
+    }
+}
 
- @media all and (max-width:599px) {
- }
+@media all and (max-width:1000px) {
+    .services section.grid { grid-template-columns: 1fr 1fr;}
+    .services { padding: 20px;}
+}
+
+@media all and (min-width:1001px){
+    .services section.grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 
 /* **** */
 
@@ -170,9 +187,61 @@
 }
 .fixed div.bg-gray h3,
 .fixed div.bg-lightorange h3{
-    font-size: 30px;
+    font-size: var(--h3-font-size);
  }
 
 .fixed div.bg-gray { border: 3px solid #e7ebec;}
 .fixed div.bg-lightorange { border: 3px solid #faebd7;}
 
+/* *** */
+
+/* US */
+.us {
+    max-width: 720px;
+    text-align: center;
+    padding: 40px;
+}
+.us h3 {
+    font-weight: 700;
+    font-size: var(--h3-font-size);
+}
+
+/* *** */
+
+/* QAC-CE-MARK */
+    
+    .qas-gradient {
+        background: linear-gradient(90deg,#294e95,#517dbc);
+        padding: 3%;
+    }
+
+    .qas-gradient h1 {
+        font-size: var(--h1-font-size);
+        margin-top: 0;
+    }
+    
+    .qas-gradient .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .qas-gradient .row h4 {
+        font-size: var(--h4-font-size);
+    }
+
+    .qas-gradient .row .CE-content {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .qas-gradient .row .stars{
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    /* .qas-gradient .row .stars,
+    .qas-gradient .row .CE-content{
+        padding: 0 15px;
+    }
+     */
+/* *** */
