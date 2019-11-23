@@ -1,5 +1,4 @@
-:root
---main-a {color:#555 }
+/* RED HEADER */
 
 .width-center {
     margin: 0 auto;
@@ -53,6 +52,83 @@
     border: none;
     margin-bottom: 27px;
 }
+/* **** */
+
+/* SERVICES */
+
+.services-title {
+    text-align: center;
+    position: relative;
+    margin: 30px 0;
+}
+
+.services { 
+    background-color: #EEE;
+    padding: 40px;
+}
+
+.services .icon h2 { 
+    padding-bottom: 30px;
+    text-align: center;
+
+}
+
+.services p { padding-left: 10px;}
+
+.services button { margin-left: 10px;}
+
+.services .icon.ce { background-image: url( ../img/ce-mark-home.png);}
+.services .icon.iso { background-image: url( ../img/iso-home.png);}
+.services .icon.aqap { background-image: url( ../img/aqap-home.png);}
+
+.services section.grid .icon {
+    margin: 10px;
+    border-bottom: 2px solid#FFF;
+    background-color:#FFF;
+    box-shadow: 0 2px 8px 0    rgba(0,0,0,0.32);
+    padding: 70px 15px 15px;
+    background-position: center 10px;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+}
+
+.services section.grid .icon:hover {filter: none;}
+
+.services ul { text-align: left;}
+
+.services ul li {  
+    display: flex;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.services button[type="submit"] {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    padding: 5px 20px;
+    display: inline-block;
+    color: #fff;
+    background-color:#db0546;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease, border 0.5s ease;
+    -webkit-appearance: none;
+}
+
+.services section.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+ @media all and (max-width:599px) {
+ }
+
+/* **** */
 
 .fixed {
     background-image: url("../img/inspection.jpeg");
@@ -100,48 +176,3 @@
 .fixed div.bg-gray { border: 3px solid #e7ebec;}
 .fixed div.bg-lightorange { border: 3px solid #faebd7;}
 
-.services-title {
-    text-align: center;
-    position: relative;
-    margin: 30px 0;
-}
-
-.services { 
-    text-align: center;
-    background-color: #EEE;
-    padding: 40px;
-}
-
-.services .icon.ce { background-image: url( ../img/ce-mark-home.png);}
-.services .icon.iso { background-image: url( ../img/iso-home.png);}
-.services .icon.aqap { background-image: url( ../img/aqap-home.png);}
-
-.services section.grid .icon {
-    margin: 10px;
-    border-bottom: 2px solid#FFF;
-    background-color:#FFF;
-    box-shadow: 0 2px 8px 0    rgba(0,0,0,0.32);
-    padding: 70px 15px 15px;
-    background-position: center 10px;
-    background-repeat: no-repeat;
-    filter: grayscale(100%);
-}
-
-.services section.grid .icon:hover {filter: none;}
-
-.services ul { text-align: left;}
-
-.services ul li {  
-    display: flex;
-    margin-bottom: 18px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-.services section.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
- @media all and (max-width:599px) {
- }
