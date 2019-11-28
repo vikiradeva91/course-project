@@ -126,24 +126,28 @@
 
 .services section.grid {
     display: grid;
+
+}
+.services section.grid {
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-@media all and (max-width:700px) {
+@media all and (max-width: 940px) {
+    .services section.grid { grid-template-columns: 1fr 1fr;}
+    .services { padding: 20px;}
+}
+
+@media all and (max-width: 640px) {
     .services section.grid {
         grid-template-columns: 1fr;
     }
 }
 
-@media all and (max-width:1000px) {
-    .services section.grid { grid-template-columns: 1fr 1fr;}
-    .services { padding: 20px;}
-}
 
-@media all and (min-width:1001px){
-    .services section.grid {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
+
+
+
+
 
 /* **** */
 
@@ -210,25 +214,26 @@
 
 /* QAC-CE-MARK */
     
-    .qas-gradient {
-        background: linear-gradient(90deg,#294e95,#517dbc);
-        padding: 3%;
-    }
+.qas-gradient {
+    background: linear-gradient(90deg,#294e95,#517dbc);
+    padding:30px;
+    color: #FFF;
+}
 
-    .qas-gradient h1 {
-        font-size: var(--h1-font-size);
-        margin-top: 0;
-    }
-    
-    .qas-gradient .row {
-        display: flex;
-        flex-wrap: wrap;
-    }
+.qas-gradient h1 {
+    font-size: var(--h1-font-size);
+    margin-top: 0;
+}
 
-    .qas-gradient .row h4 {
-        font-size: var(--h4-font-size);
-    }
+.qas-gradient .row {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.qas-gradient .row h4 {
+    font-size: var(--h4-font-size);
+}
+@media all and (min-width:981px) {
     .qas-gradient .row .CE-content {
         flex: 0 0 75%;
         max-width: 75%;
@@ -238,7 +243,15 @@
         flex: 0 0 25%;
         max-width: 25%;
     }
+}
 
+@media all and (max-width:980px) {
+    .qas-gradient .row .stars { display: none;}
+}
+
+ul {
+    list-style-image: url(../svg/play-button.svg);
+}
     /* .qas-gradient .row .stars,
     .qas-gradient .row .CE-content{
         padding: 0 15px;
