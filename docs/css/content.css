@@ -45,9 +45,7 @@ a {
 } /* clearfix */
 
 
-ul { 
-    list-style: none; 
-}
+ul { list-style: disclosure-closed;}
 
 section {
     margin: 0 auto;

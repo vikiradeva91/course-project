@@ -1,0 +1,25 @@
+:root {
+    --h5-font-size:20px;
+}
+
+footer {
+    background:#333;
+    color:#fff;
+    padding: 40px;
+}
+
+.footer ul {
+    padding-left: 0;
+    padding-top: 8px;
+}
+
+footer h5 {
+    font-size: var(--h5-font-size);
+}
+
+footer .info ul li { list-style: none;}
+
+footer svg { vertical-align: middle;}
+
+footer .info ul li a { color: #fff;}
+footer .info ul{ padding: 0;}

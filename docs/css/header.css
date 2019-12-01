@@ -36,8 +36,7 @@ header nav a.red {
 
 header nav a.red:hover { 
 	color: #db0546;
-	border-bottom: 1px solid #db0546;
-	margin-bottom: -1px;
+	transition: color 0.3s ease-in;
 }
 
 header .logo img {
