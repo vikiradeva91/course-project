@@ -2,6 +2,7 @@
     --h4-font-size:25px;
     --h3-font-size: 30px;
     --h1-font-size: 40px;
+    --h1-text-transform: uppercase;
 }
 /* RED HEADER */
 
@@ -43,7 +44,10 @@
     opacity: 1;
 }
 
-.text h1 { font-size: 35px;}
+.text h1 {
+    font-size:  var(--h1-font-size);
+    margin: 16px 0;
+}
 
 .suggestions-title { 
     text-align: center;
@@ -86,15 +90,24 @@
 .services .icon.iso { background-image: url( ../img/iso-home.png);}
 .services .icon.aqap { background-image: url( ../img/aqap-home.png);}
 
+
+
 .services section.grid .icon {
     margin: 10px;
     border-bottom: 2px solid#FFF;
     background-color:#FFF;
     box-shadow: 0 2px 8px 0    rgba(0,0,0,0.32);
-    padding: 70px 15px 15px;
-    background-position: center 10px;
+    padding: 80px 15px 20px;
+    background-position: center 25px;
     background-repeat: no-repeat;
     filter: grayscale(100%);
+}
+
+.animate {opacity: 0;}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
 }
 
 .services section.grid .icon:hover {filter: none;}
@@ -122,6 +135,7 @@
     cursor: pointer;
     transition: background-color 0.5s ease, border 0.5s ease;
     -webkit-appearance: none;
+    margin: 15px 0 15px 10px;
 }
 
 .services section.grid {
@@ -142,11 +156,6 @@
         grid-template-columns: 1fr;
     }
 }
-
-
-
-
-
 
 
 /* **** */
@@ -204,9 +213,10 @@
     max-width: 720px;
     text-align: center;
     padding: 40px;
+    font-size: 17px;
 }
 .us h3 {
-    font-weight: 700;
+    font-weight: 400;
     font-size: var(--h3-font-size);
 }
 
@@ -216,12 +226,13 @@
     
 .qas-gradient {
     background: linear-gradient(90deg,#294e95,#517dbc);
-    padding:30px;
+    padding:40px;
     color: #FFF;
 }
 
 .qas-gradient h1 {
-    font-size: var(--h1-font-size);
+    font-size:  var(--h1-font-size);
+    text-transform:  var(--h1-text-transform);
     margin-top: 0;
 }
 
@@ -232,6 +243,11 @@
 
 .qas-gradient .row h4 {
     font-size: var(--h4-font-size);
+}
+
+.qac-gradient h1 {
+    font-size:  var(--h1-font-size);
+    text-transform:  var(--h1-text-transform);
 }
 @media all and (min-width:981px) {
     .qas-gradient .row .CE-content {
@@ -249,12 +265,6 @@
     .qas-gradient .row .stars { display: none;}
 }
 
-ul {
-    list-style-image: url(../svg/play-button.svg);
-}
-    /* .qas-gradient .row .stars,
-    .qas-gradient .row .CE-content{
-        padding: 0 15px;
-    }
-     */
+ul { padding-left: 25px;}
+
 /* *** */
