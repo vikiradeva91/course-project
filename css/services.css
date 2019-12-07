@@ -1,0 +1,71 @@
+.bg {
+    background-image: url(../img/services.jpg),linear-gradient(180deg,rgba(0,0,0,.5) 0,rgba(0,0,0,.3) 40%,
+    rgba(0,0,0,.75));
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+
+.bg h1 {
+    color:  #fff;
+    text-align: center;
+    padding: 100px;
+    margin: 0;
+}
+
+section {
+    padding: 40px 0;
+}
+
+section.wrap {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4f5f6;
+}
+
+.container .title-container,
+.container .title-container-left { width: 50%;}
+
+.container .title-container {padding: 30px 30px 30px 0;}
+
+.container .title-container-left { padding: 30px 0 30px 30px ; }
+
+.container .title { margin: 0 0 0 -40px; }
+.container .title-left { margin: 0 -40px 0 0 ;}
+
+.container .title,
+.container .title-left {
+    padding: 20px;
+    background:#fff;
+    -webkit-box-shadow: 0 6px 16px rgba(0,0,0,.05);
+    -moz-box-shadow: 0 6px 16px rgba(0,0,0,.05);
+    box-shadow: 0 6px 16px rgba(0,0,0,.05);
+
+    -webkit-transition: all .4s cubic-bezier(.2,.3,0,1);
+    -moz-transition: all .4s cubic-bezier(.2,.3,0,1);
+    -ms-transition: all .4s cubic-bezier(.2,.3,0,1);
+    -o-transition: all .4s cubic-bezier(.2,.3,0,1);
+    transition: all .4s cubic-bezier(.2,.3,0,1);
+    
+}
+
+@media all and (max-width: 1100px) {
+    .container {
+        display: block;
+        text-align: center;
+        background: transparent;
+    }
+    .container .title {
+        margin: 0;
+    }
+    .container .title-container { 
+        padding: 0;
+        margin: 0 auto;
+        width: 60%;
+    }
+}
