@@ -5,8 +5,8 @@
 footer {
     background:#333;
     color:#fff;
-    padding: 40px;
 }
+footer a { color: #fff;}
 
 .footer ul {
     padding-left: 0;
@@ -23,3 +23,21 @@ footer svg { vertical-align: middle;}
 
 footer .info ul li a { color: #fff;}
 footer .info ul{ padding: 0;}
+
+.call {
+    background-image: url(../svg/phone.svg);
+}
+
+.location {
+    background-image: url(../svg/pin.svg);
+}
+
+.mail {
+    background-image: url(../svg/envelope.svg);
+}
+.icon {
+    background-position: center 10px;
+    background-size: 40px 40px;
+    padding-top: 60px;
+    background-repeat: no-repeat;
+}
