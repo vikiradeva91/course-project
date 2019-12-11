@@ -19,7 +19,7 @@ footer*/ {
 .p2 { padding: 20px; }
 .p4 { padding: 40px; }
 
-.c2, .c3, .c32, .c4, .c43, .c6, .w35, .w15 {
+.c2, .c3,.c-3, .c32, .c4, .c43, .c6, .w35, .w15 {
     display: inline-block;
     vertical-align: middle;
     box-sizing: border-box;
@@ -27,6 +27,7 @@ footer*/ {
 
 .c2 { width: 50%; }
 .c3, .c32 { width: 33.333333333%; }
+.c-3 { width: 66.666666667%; }
 .c4, .c43 { width: 25%; }
 .c6 { width: 16.666666%; }
 
@@ -53,6 +54,7 @@ footer*/ {
 
 @media all and (max-width: 800px) {
     .c4, .c43 { width: 50%; }
+    .c-3 { width: 100%; }
 }
 
 @media all and (max-width: 600px) {
