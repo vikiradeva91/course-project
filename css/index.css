@@ -1,9 +1,4 @@
-:root {
-    --h4-font-size:25px;
-    --h3-font-size: 30px;
-    --h1-font-size: 40px;
-    --h1-text-transform: uppercase;
-}
+
 /* RED HEADER */
 
 .width-center {
@@ -31,6 +26,14 @@
 }
 
 .text  {transform: translateX(-50vw);}
+
+@media all and (min-width:981px) {
+    .text {margin-top: 180px;}
+}
+
+@media all and (max-width:980px) {
+    .text {margin-top: 0;}
+}
 
 .woman2 { 
     padding-top: 20px; 
@@ -76,7 +79,7 @@
     padding: 40px;
 }
 
-.services .icon h2 { 
+.services .index-icon h2 { 
     padding-bottom: 30px;
     text-align: center;
 
@@ -86,13 +89,13 @@
 
 .services button { margin-left: 10px;}
 
-.services .icon.ce { background-image: url( ../img/ce-mark-home.png);}
-.services .icon.iso { background-image: url( ../img/iso-home.png);}
-.services .icon.aqap { background-image: url( ../img/aqap-home.png);}
+.services .index-icon.ce { background-image: url( ../img/ce-mark-home.png);}
+.services .index-icon.iso { background-image: url( ../img/iso-home.png);}
+.services .index-icon.aqap { background-image: url( ../img/aqap-home.png);}
 
 
 
-.services section.grid .icon {
+.services section.grid .index-icon {
     margin: 10px;
     border-bottom: 2px solid#FFF;
     background-color:#FFF;
@@ -110,7 +113,7 @@
     animation-name: fadeInUp;
 }
 
-.services section.grid .icon:hover {filter: none;}
+.services section.grid .index-icon:hover {filter: none;}
 
 .services ul { text-align: left;}
 
@@ -197,7 +200,7 @@
 .us {
     max-width: 720px;
     text-align: center;
-    padding: 40px;
+    padding:20px 40px 40px;
     font-size: 17px;
 }
 .us h3 {

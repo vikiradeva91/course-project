@@ -100,7 +100,7 @@ button[type="submit"] {
     -ms-user-select: none;
     user-select: none;
     padding: .5rem 1rem;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     font-size: 1.125rem;
     line-height: 1.5;
     border-radius: .3rem;
