@@ -34,7 +34,7 @@
     background:#db0546;
     padding: 10px;
     color:#fff;
-    width: 360px;
+    max-width: 360px;
     margin: -40px auto 0px auto;
 }
 .about-color1,
@@ -47,5 +47,14 @@ div.button {
     margin-bottom: 40px;
 }
 
+@media all and (max-width: 640px) {
+    .about-color1 h3,
+    .about-color2 h3 { font-size: 20px;}
 
+    .about-color1,
+    .about-color2 { padding: 45px 20px;} 
+}
 
+@media all and (max-width: 480px) {
+    .bg-about h1 { padding: 60px;}
+}
